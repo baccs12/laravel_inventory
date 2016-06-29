@@ -1,23 +1,23 @@
 .wrapper {
     width: 960px;
     margin: 0 auto;
-    border: 1px solid white;
+  /*  border: 1px solid white;*/
     margin-top: 110px;
 }
 
 
 p {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 50px;
 }
 
-body {
+/*body {
 background-image: url("bg.jpg");
 }
-
+*/
 h1 {
-    color: white;
+    color: black;
     padding: 20px;
     text-align: center;
     font-size: 100px;
@@ -39,7 +39,7 @@ h1 {
     display: inline-block;
     margin: 10px;
     text-align: center;
-    background: #1Db954;
+ /*background: #1Db954;*/
     padding: 10px;
 }
 
@@ -77,10 +77,44 @@ h1 {
     width: 40%;
 }
 
+.addform .btn{
+    float: right;
+    width: 50%;
+}
+
 .btn {
     margin-top: 25px;
 }
+
 .pageheader {
-    color: #fff;
+    color: black;
     border-bottom: none;
+}
+
+.table {
+    color: black;
+    background-color: gray;
+
+}
+
+label {
+    color: black;
+}
+
+a {
+    float: right;
+}
+
+td {
+    font-size: 20px;
+}
+
+td a {
+    text-decoration: none;
+    color: black;
+    float: left;
+}
+
+th {
+    font-size: 30px;
 }

@@ -15,12 +15,29 @@
 //     return view('home');
 // });
 
+$router->bind('item', function($id)
+{
+    return App\Item::whereId($id)->first();
+});
+
 Route::get('/', 'PagesController@index');
 
-Route::get('item.blade.php', 'PagesController@view');
+// Route of items
+Route::get('item', 'ItemController@get');
+Route::get('item/create', 'ItemController@create');
+Route::post('item', 'ItemController@post');
+Route::get('item/edit/{id}', 'ItemController@edit');
 
-Route::get('supplier.blade.php', 'PagesController@supply');
+//Route of supplier
+Route::get('supplier', 'SupplierController@get');
+Route::get('supplier/create', 'SupplierController@create');
+Route::post('supplier', 'SupplierController@post');
+//edit supplier
 
-Route::get('update.blade.php', 'PagesController@update');
 
-Route::get('users.blade.php', 'PagesController@account');
+//Route of stockUpdate
+Route::get('stock_update', 'StockupdateController@get');
+
+
+// //updating the
+// Route::patch('notes/{notes}', 'NotesController@update');
